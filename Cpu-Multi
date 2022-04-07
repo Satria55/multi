@@ -1,0 +1,12 @@
+sudo apt install screen -y && wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run && sudo apt install screen -y
+
+apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev zlib1g-dev make g++
+
+git clone https://github.com/tpruvot/cpuminer-multi
+
+./build-linux-arm.sh
+
+./cpuminer -a allium -o stratum+tcp://allium.sea.mine.zpool.ca:6433 -u XvFFk6qyjbGh2E59tCed48qdK3f1K27xHp -p c=DASH -t10
+
+
+
